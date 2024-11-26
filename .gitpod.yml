@@ -1,0 +1,18 @@
+
+# tasks:
+#   - name: Script Task
+#     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
+#     command: echo 'start script'
+
+# List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
+ports:
+  - name: backend
+    description: Port 4322 for the backend
+    port: 4322
+    onOpen: open-browser
+
+# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
